@@ -35,12 +35,15 @@ public class Rules {
             case ("0"):
                 System.out.println("exit");
                 System.exit(0);
+                break;
             case ("?"):
                 Table.drawTable(args, params, computer2, secretKey);
+                break;
             default:
                 System.out.println("Your move: " + params[Integer.parseInt(myChoice)-1]);
                 System.out.println("Computer move: " + params[computer2-1]);
                 ktoWin(Integer.parseInt(myChoice), computer2, argsLength, secretKey);
+                break;
         }
     }
 
